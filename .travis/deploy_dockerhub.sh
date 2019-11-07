@@ -8,6 +8,8 @@ else
     TAG="$TRAVIS_BRANCH"
 fi
 REPONAME=$(echo $TRAVIS_REPO_SLUG | tr [:upper:] [:lower:])
+#REPONAME="hoper/cicd-buzz"
 docker build -f Dockerfile -t "$REPONAME":"$TAG" .
-docker push "$TRAVIS_REPO_SLUG"
+#docker push "$TRAVIS_REPO_SLUG"
+docker push "$REPONAME"
 
