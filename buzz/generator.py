@@ -1,7 +1,7 @@
 import random
 
-buzz = ('continuous testing', 'continuous integration',
-    'continuous deployment', 'continuous improvement', 'devops')
+buzz = ('continuous testing ss' 'continuous integration ss',
+    'continuous deployment ss', 'continuous improvement ss', 'devops ss')
 adjectives = ('complete', 'modern', 'self-service', 'integrated', 'end-to-end')
 adverbs = ('remarkably', 'enormously', 'substantially', 'significantly',
     'seriously')
