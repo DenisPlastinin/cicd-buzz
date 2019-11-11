@@ -1,4 +1,3 @@
- 
 <html>
   <head>
     <title>CI/CD buzz generator</title>
@@ -8,10 +7,11 @@
     <style>
       body {
         padding: 0; 
+        background: url('/static/background.jpg') no-repeat;
         background-size: cover; 
         background-color: #58576a; 
         background-blend-mode: multiply; 
-      } 
+      }
       .buzz { 
         color: #fff; 
         font-family: 'Lobster', cursive; 
@@ -26,7 +26,7 @@
       }
     </style>
   </head>
-  <body background="static/background.jpg">
+  <body>
     <div class="buzz">
       <p class="buzz">{{ buzz }}</p>
     </div>
