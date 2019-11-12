@@ -5,7 +5,7 @@ docker login -u $DOCKER_USER -p $DOCKER_PASS
 if [ "$TRAVIS_BRANCH" = "master" ]; then
     TAG="latest"
 else
-    TAG="dev"
+    TAG="$TRAVIS_BRANCH"
 fi
 REPONAME="hoper/cicd-buzz"
 docker build -f Dockerfile -t "$REPONAME":"$TAG" .
