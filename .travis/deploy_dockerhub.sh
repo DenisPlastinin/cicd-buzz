@@ -10,5 +10,5 @@ fi
 REPONAME="hoper/cicd-buzz"
 docker build -f Dockerfile -t "$REPONAME":"$TAG" .
 #docker push "$TRAVIS_REPO_SLUG"
-docker push "$REPONAME"
+docker push "$REPONAME":"$TAG"
 
