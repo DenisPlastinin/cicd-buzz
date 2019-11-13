@@ -11,4 +11,4 @@ fi
 docker build -f Dockerfile -t "$DOCKER_USER/$TRAVIS_BRANCH":"$TAG" .
 #docker push "$TRAVIS_REPO_SLUG"
 #docker push "$REPONAME":"$TAG"
-docker push "$DOCKER_USER/cicd-buzz":"$TAG"
+docker push "$DOCKER_USER/$TRAVIS_BRANCH":"$TAG"
