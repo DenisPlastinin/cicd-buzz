@@ -11,7 +11,7 @@ signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
 def generate_buzz():
     page = '<html><body><h1>'
     page += generator.generate_buzz()
-    page += '<h2> stg v0.1 </h2>'
+    page += '<h2> stg v0.2 </h2>'
     page += '</h1></body></html>'
     return page
 
